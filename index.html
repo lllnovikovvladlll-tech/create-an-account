@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h2>Create an Account</h2>
+            <form action="/submit" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" name="email">
+                    <div class="info-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="gender-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select name="country">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="city">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+
+                <div class="terms-text">
+                    By clicking the Sign Up button, you confirm that you accept our<br>
+                    <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="login-text">
+                    Have an account? <a href="#">Log In</a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form-card">
+            <h2>Profile</h2>
+            <form action="/update-profile" method="POST">
+                <div class="profile-photo"></div>
+                <div class="photo-actions">
+                    <div class="photo-icon" title="Upload photo">📷</div>
+                    <div class="photo-icon" title="Delete photo">🗑</div>
+                </div>
+                <div class="photo-size-text">Up to 1 MB (300×300 px)</div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select name="country">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="city">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Zip Code</label>
+                        <input type="text" name="zipCode">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" name="phoneNumber">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
